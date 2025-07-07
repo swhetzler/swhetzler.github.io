@@ -1,16 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  color: #333333;
   margin: 0;
   padding: 0;
 }
 
 nav {
-  background-color: #333;
+  background-color: #2c3e50;
   color: white;
   position: sticky;
   top: 0;
   width: 100%;
   text-align: center;
+  z-index: 1000;
 }
 
 nav ul {
@@ -28,27 +33,49 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #4682b4; /* steel blue accent on hover */
 }
 
 .hero {
-  padding: 5em 0;
+  padding: 5em 1em;
   text-align: center;
-  background: #f5f5f5;
+  background: #4682b4; /* steel blue background */
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 0.3em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  font-weight: 300;
 }
 
 section {
   padding: 4em 2em;
+  max-width: 960px;
+  margin: auto;
 }
 
 .projects {
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
+  justify-content: center;
 }
 
 footer {
   text-align: center;
   padding: 2em;
-  background-color: #333;
+  background-color: #1e1e1e;
   color: white;
+  font-size: 0.9em;
 }
